@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Page</title>
+</head>
+
+<body>
+  <h1>Video Page</h1>
+  <p>This is the video page.</p>
+
+  <video controls>
+    <source src="/video/video.mp4" type="video/mp4">
+    <track default src="/captions/captions.vtt" kind="captions" label="English" srclang="en">
+  </video>
+  <button class="v-playpause control-button" aria-label="Play or Pause Button" accesskey="q">Play video (q)</button>
+  <button class="caption_button" onclick="CaptionControl()" aria-label="To on or off captions"
+    accesskey="w">Closed captions (w)</button>
+
+  <button class="v-volumeUp control-button" aria-label="Increase Volume by .123% Button" accesskey="e">Sound
+    Up (e)</button>
+  <button class="v-volumeDown control-button" aria-label="Decrease Volume by .123% Button"
+    accesskey="r">Sound Down(r)</button>
+
+  <button onclick="location.href='/'">Back</button>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Page</title>
+</head>
+
+<body>
+    <h1>Audio Page</h1>
+    <p>This is the audio page.</p>
+
+    <audio id="audio" controls>
+        <source src="/audio/audio.mp3" type="audio/mpeg">
+        <track default src="/captions/captions.vtt" kind="captions" label="English" srclang="en">
+    </audio>
+
+    <button class="a-playpause control-button" aria-label="Play or Pause Button" accesskey="q">Play (q)</button>
+    <button class="a-volumeUp control-button" aria-label="Increase Volume by .123% Button"
+        accesskey="w">Volume Up (w)</button>
+    <button class="a-volumeDown control-button" aria-label="Decrease Volume by .123% Button"
+        accesskey="e">Volume Down (e)</button>
+
+
+
+    <button onclick="location.href='/'">Back</button>
+</body>
+
+</html>
