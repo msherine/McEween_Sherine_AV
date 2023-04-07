@@ -12,27 +12,32 @@
     <h1>Audio Page</h1>
     <p>Welcome to the Audio page.</p>
 
-    <audio id="audio" controls>
-        <source src="/audio/audio.mp3" type="audio/mpeg">
-        <track default src="/captions/audioCap.vtt" kind="captions" label="English" srclang="en">
-    </audio>
+    <div class="container">
+        <audio id="audio" controls>
+            <source src="/audio/audio.mp3" type="audio/mpeg">
+            <track default src="/captions/audioCap.vtt" kind="captions" label="English" srclang="en">
+        </audio>
+    </div>
+
 
     <div class="caption"></div>
 
+    <div class="controls">
+        <button class="a-playpause control-button" aria-label="Play or Pause Button" accesskey="a">Play audio(alt +
+            a)</button>
 
-    <button class="a-playpause control-button" aria-label="Play or Pause Button" accesskey="a">Play audio(alt +
-        a)</button>
+        <button class="a-volumeUp control-button" aria-label="Increase Volume by .123% Button" accesskey="h">Sound Up
+            (alt + h)</button>
 
-    <button class="a-volumeUp control-button" aria-label="Increase Volume by .123% Button" accesskey="h">Sound Up
-        (alt + h)</button>
+        <button class="a-volumeDown control-button" aria-label="Decrease Volume by .123% Button" accesskey="l">Sound
+            Down(alt + l)</button>
 
-    <button class="a-volumeDown control-button" aria-label="Decrease Volume by .123% Button" accesskey="l">Sound
-        Down(alt + l)</button>
+        <button class="caption_button" onclick="CaptionControl()" aria-label="To on or off captions"
+            accesskey="c">Closed
+            captions (alt + c)</button>
 
-    <button class="caption_button" onclick="CaptionControl()" aria-label="To on or off captions" accesskey="c">Closed
-        captions (alt + c)</button>
-
-    <button onclick="location.href='/'">Back</button>
+        <button class="back" onclick="location.href='/'">Back</button>
+    </div>
 </body>
 
 </html>
