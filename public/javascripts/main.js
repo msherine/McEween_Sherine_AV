@@ -1,5 +1,5 @@
-(() => {
 
+document.addEventListener('DOMContentLoaded', () => {
     // Video player code
     const Vplayer = document.querySelector("video"),
         VplayPauseBtn = document.querySelector(".v-playpause"),
@@ -13,10 +13,10 @@
     VplayPauseBtn.onclick = () => {
         if (Vplayer.paused) {
             Vplayer.play();
-            VplayPauseBtn.textContent = "Pause (p)";
+            VplayPauseBtn.textContent = "Pause video(alt + v)";
         } else {
             Vplayer.pause();
-            VplayPauseBtn.textContent = "Resume (p)";
+            VplayPauseBtn.textContent = "Resume video (alt + v)";
         }
     };
 
@@ -33,8 +33,5 @@
             Vplayer.volume -= 0.1;
         }
     }
-
-
-})();
-
-
+});
+  

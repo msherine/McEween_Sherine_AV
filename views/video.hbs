@@ -10,20 +10,20 @@
 
 <body>
   <h1>Video Page</h1>
-  <p>This is the video page.</p>
+  <p>Welcome to the video page.</p>
 
   <video controls>
     <source src="/video/video.mp4" type="video/mp4">
     <track default src="/captions/captions.vtt" kind="captions" label="English" srclang="en">
   </video>
-  <button class="v-playpause control-button" aria-label="Play or Pause Button" accesskey="q">Play video (q)</button>
+  <button class="v-playpause control-button" aria-label="Play or Pause Button" accesskey="v">Play video (alt + v)</button>
   <button class="caption_button" onclick="CaptionControl()" aria-label="To on or off captions"
-    accesskey="w">Closed captions (w)</button>
+    accesskey="c">Closed captions (alt + c)</button>
 
-  <button class="v-volumeUp control-button" aria-label="Increase Volume by .123% Button" accesskey="e">Sound
-    Up (e)</button>
+  <button class="v-volumeUp control-button" aria-label="Increase Volume by .123% Button" accesskey="h">Sound
+    Up (alt + h)</button>
   <button class="v-volumeDown control-button" aria-label="Decrease Volume by .123% Button"
-    accesskey="r">Sound Down(r)</button>
+    accesskey="l">Sound Down(alt + l)</button>
 
   <button onclick="location.href='/'">Back</button>
 </body>
