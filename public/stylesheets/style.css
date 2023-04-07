@@ -16,14 +16,15 @@ a {
 .caption {
   display: flex;
   max-width: 1000px;
-  height: 400px;
+  height: 250px;
   background-color: #2e3d49;
-  margin: 100px auto;
+  margin: 50px auto;
   font-size: 30px;
   text-align: center;
   color: #fff;
   align-items: center;
   justify-content: center;
+  border-radius: 30px;
 }
 
 .container {
@@ -37,17 +38,24 @@ a {
 
 .controls {
   max-width: auto;
-  margin: 100px auto;
+  margin: 50px auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
+.index-btn {
+  background-color: #e0853f;
+  height: 150px;
+  width: 150px;
+}
+
 button {
   padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  background-color: #2e3d49;
+  border-radius: 1rem;
+  background-color: #e0853f;
+  height: 50px;
   color: #fff;
   font-size: 1rem;
   margin: 0.5rem;
